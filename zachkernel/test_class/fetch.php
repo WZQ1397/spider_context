@@ -8,7 +8,6 @@
 </style>
 </head>
 <body> 
-
 <?php
 // 定义变量并默认设置为空值
 $nameErr = $emailErr = $genderErr = $websiteErr = "";

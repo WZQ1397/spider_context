@@ -1,7 +1,9 @@
 <!-- 提交后创建文件夹 -->
+<script type="text/javascript" src="js/back.js"></script>
 <?php
-		$getpath = $_POST["name"];
-        $path = "spiderdata/".$getpath."/";
+#function sp_dir($getpath){
+		$getpath = $_GET['dirname'];
+        $path = "../spiderdata/".$getpath."/";
 		$data = "data";
 		$data_bk = "data_bk";
         if (!is_dir($path)){
@@ -14,6 +16,7 @@
 			fwrite($sqlfile, $txt);
 			fclose($sqlfile);
         }
+#}
 		/***
 		else
         {
@@ -21,14 +24,6 @@
         }
         ***/
 ?>
-
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
-   名字: <input type="text" name="name" value="<?php echo $name;?>">
-   <span class="error">* <?php echo $nameErr;?></span>
-   <br><br>
-
-   <input type="submit" name="submit" value="Submit"> 
-</form>
 
 <!--
 <div id = "test3" style = "height:10%; border:1px solid red; margin-top:5%">  
@@ -41,3 +36,12 @@
           
     </form>     
 </div>  -->
+
+<style>
+img{
+    display:block;
+    margin:0 auto;
+}
+</style>
+<html>
+ <body><a href="../index.php"><img src="../img/jump.jpg"/></a></body></html>

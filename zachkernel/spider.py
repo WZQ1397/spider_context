@@ -78,6 +78,7 @@ def weblist(main):
     soup = BeautifulSoup(data,get_method)
     count = 0
     
+    
     #获取页面文章列表
     for weblst in list(soup.find_all(LIST_TAG,class_=LIST_ATTR)):
         i = 0

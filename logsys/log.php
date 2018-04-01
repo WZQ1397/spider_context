@@ -4,7 +4,7 @@ a:visited {color: #990099} /* 已访问的链接 */
 a:hover {color: #FFCC99} /* 鼠标移动到链接上 */
 a:active {color: #6699CC} /* 选定的链接 */
 </style>
-<link rel="stylesheet" href="css/rank.css"/>
+<link rel="stylesheet" href="../css/rank.css"/>
 <ul>
 <?php
 $d = dir($_SERVER['DOCUMENT_ROOT']."/dev/spider_context/spiderdata/log");

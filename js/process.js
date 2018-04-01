@@ -7,6 +7,8 @@ function sleep(numberMillis) {
             return;
     }
 }
+
+/*
 var _t;
 window.onbeforeunload = function()
 {
@@ -16,8 +18,8 @@ window.onbeforeunload = function()
 window.onunloadcancel = function()
 {
     clearTimeout(_t);
-    alert("继续采集中");
 }
+*/
 
 function display(speed) {
 
